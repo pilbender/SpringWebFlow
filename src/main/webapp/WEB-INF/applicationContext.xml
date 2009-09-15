@@ -31,4 +31,5 @@
 	<bean id="customerDAO" class="dao.CustomerDAOMock" >
 		<property name="customer" ref="customer" />
 	</bean>
+
 </beans>

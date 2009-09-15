@@ -12,6 +12,12 @@
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 
+	<!-- Along with this, you must also add the object, in this case "customer"
+	to the ModelAndView.  Then it is accessible from the home.jsp -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
 	<!-- Serves static resource content from .jar files such as spring-js.jar -->
 	<!--
 	<servlet>

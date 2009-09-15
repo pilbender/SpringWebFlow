@@ -36,8 +36,13 @@ public class HomeController extends AbstractController {
 		/* Or home-servlet.xml can configure the viewResolver to
 		 * exposeContextBeansAsAttributes = true and then just use regular
 		 * JSP Expression Language to access beans that way.
+		 *
+		 * When you add the object to the ModelAndView, you must also add
+		 * org.springframework.web.context.ContextLoaderListener in the web.xml
+		 * because these are made available and accessed from the application
+		 * context.
 		 */
-		mav.addObject("customers", customer);
+		mav.addObject("customer", customer);
 		return mav;
 	}
 }

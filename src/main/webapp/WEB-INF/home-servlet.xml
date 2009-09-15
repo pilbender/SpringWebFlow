@@ -35,14 +35,4 @@
 		-->
 	</bean>
 
-	<!-- These really should be in the applicationContext.xml -->
-	<bean id="customer" class="javabeans.Customer" >
-		<property name="id" value="1" />
-		<property name="firstName" value="John" />
-		<property name="lastName" value="Doe" />
-	</bean>
-
-	<bean id="customerDAO" class="dao.CustomerDAOMock" >
-		<property name="customer" ref="customer" />
-	</bean>
 </beans>
