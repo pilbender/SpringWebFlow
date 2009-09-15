@@ -10,9 +10,9 @@
                     <value>true</value>
                 </property>
             </activation>
-            <properties>
-                <netbeans.deployment.server.id>[/home/scott/sges-v3-prelude/glassfish]deployer:gfv3:localhost:8080</netbeans.deployment.server.id>
-            </properties>
+            <properties></properties>
         </profile>
     </profiles>
 </profilesXml>
+
+

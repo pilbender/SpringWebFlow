@@ -1,5 +1,6 @@
 package dao;
 
+import dao.*;
 import exception.GeneralException;
 import javabeans.Customer;
 

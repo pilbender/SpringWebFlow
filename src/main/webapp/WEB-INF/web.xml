@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-    <display-name>SpringWebFlow</display-name>
-    <session-config>
-        <session-timeout>
+	<display-name>SpringWebFlow</display-name>
+
+	<!-- Core Spring Front Controller -->
+	<servlet>
+		<servlet-name>home</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>home</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- Serves static resource content from .jar files such as spring-js.jar -->
+	<!--
+	<servlet>
+		<servlet-name>Resource Servlet</servlet-name>
+		<servlet-class>org.springframework.js.resource.ResourceServlet</servlet-class>
+	</servlet>
+	-->
+
+	<!-- Map all /resources requests to the Resource Servlet for handling -->
+	<!--
+	<servlet-mapping>
+		<servlet-name>Resource Servlet</servlet-name>
+		<url-pattern>/resources/*</url-pattern>
+	</servlet-mapping>
+	-->
+
+	<session-config>
+		<session-timeout>
             30
-        </session-timeout>
-    </session-config>
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-        </welcome-file-list>
-    </web-app>
+		</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>home.do</welcome-file>
+	</welcome-file-list>
+</web-app>

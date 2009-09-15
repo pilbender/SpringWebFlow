@@ -22,6 +22,18 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
     
+	<bean name="/home.do" class="controller.HomeController" >
+		<property name="customer" ref="customer" />
+	</bean>
+
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+		<!-- This is so jsps can access Spring Managed Beans -->
+		<property name="exposeContextBeansAsAttributes" value="true" />
+	</bean>
+
+	<!-- These really should be in the applicationContext.xml -->
 	<bean id="customer" class="javabeans.Customer" >
 		<property name="id" value="1" />
 		<property name="firstName" value="John" />
