@@ -12,7 +12,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-		<jsp:useBean id="customer" scope="request" class="javabeans.Customer" />
     </head>
     <body>
 		Customer Id: ${customer.id} <br />

@@ -33,6 +33,10 @@ public class HomeController extends AbstractController {
 	protected ModelAndView handleRequestInternal(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		ModelAndView mav = new ModelAndView("home");
+		/* Or home-servlet.xml can configure the viewResolver to
+		 * exposeContextBeansAsAttributes = true and then just use regular
+		 * JSP Expression Language to access beans that way.
+		 */
 		mav.addObject("customers", customer);
 		return mav;
 	}

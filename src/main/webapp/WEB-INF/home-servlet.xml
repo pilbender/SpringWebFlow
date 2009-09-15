@@ -30,7 +30,9 @@
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 		<!-- This is so jsps can access Spring Managed Beans -->
+		<!--
 		<property name="exposeContextBeansAsAttributes" value="true" />
+		-->
 	</bean>
 
 	<!-- These really should be in the applicationContext.xml -->
