@@ -70,11 +70,11 @@
 			<version>2.0.b36</version>
 			<type>jar</type>
 		</dependency>
-	 <dependency>
-	  <groupId>org.springframework.webflow</groupId>
-	  <artifactId>org.springframework.js</artifactId>
-	  <version>2.0.5.RELEASE</version>
-	 </dependency>
+		<dependency>
+			<groupId>org.springframework.webflow</groupId>
+			<artifactId>org.springframework.js</artifactId>
+			<version>2.0.5.RELEASE</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
