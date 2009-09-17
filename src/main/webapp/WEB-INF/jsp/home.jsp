@@ -17,7 +17,6 @@
 		<script type="text/javascript" src="resources/dojo/dojox.js"></script>
 
 		<style type="text/css">
-			@import "featureexplorer/Dojo/Drag%20And%20Drop/dndDefault.css"
 			#moveable1 {
 				background: #fff;
 				border: 1px solid black;
