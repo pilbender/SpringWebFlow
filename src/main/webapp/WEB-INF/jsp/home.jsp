@@ -82,7 +82,7 @@
 
 	</head>
 	<body><!-- this is a Typical WebPage starting point ... -->
-		<h1>Dojo Moveable test</h1>
+		<h1>Dojo Moveable Test</h1>
 
 		<table id="moveable1">
 			<tr><td id="handle1" colspan="2">You can drag the table using this handle.</td></tr>
@@ -101,7 +101,7 @@
 			<div id="moveable3">You can move this paragraph. It is relatively positioned.</div>
 		</div>
 
-		<h3>No Dojo Effect Here</h3>
+		<h3>No Dojo Effects Here</h3>
 		Customer Id: ${customer.id} <br />
 		Customer First Name: ${customer.firstName} <br />
 		Customer Last Name: ${customer.lastName} <br />
