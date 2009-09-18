@@ -34,8 +34,8 @@
 				background: #fff;
 				width:  200px;
 				height: 200px;
-				left: ${customer.position}px;
-				top:  100px;
+				left: ${customer.leftPosition}px;
+				top:  ${customer.topPosition}px;
 				padding: 10px 20px;
 				margin: 10px 20px;
 				border: 10px solid black;
@@ -77,11 +77,29 @@
 				});
 			};
 			dojo.addOnLoad(initDND);
+
+			var x, y;
+			var position = function(x,y){
+				x = document.getElementById("moveable2").offsetLeft;
+				y = document.getElementById("moveable2").offsetTop;
+			};
+
 		</script>
 
 	</head>
 	<body><!-- this is a Typical WebPage starting point ... -->
 		<h1>Dojo Moveable Test</h1>
+
+		<h3>No Dojo Effects Here</h3>
+		Customer Id: ${customer.id} <br />
+		Customer First Name: ${customer.firstName} <br />
+		Customer Last Name: ${customer.lastName} <br />
+
+		<form action="home.do" method="GET" enctype="multipart/form-data">
+			<input type="text" name="leftPosition" value="${customer.leftPosition}" />
+			<input type="text" name="topPosition" value="${customer.topPosition}" />
+			<input type="submit" value="Save" />
+		</form>
 
 		<table id="moveable1">
 			<tr><td id="handle1" colspan="2">You can drag the table using this handle.</td></tr>
@@ -99,15 +117,5 @@
 			<div>You can drag this whole object around.</div>
 			<div id="moveable3">You can move this paragraph. It is relatively positioned.</div>
 		</div>
-
-		<h3>No Dojo Effects Here</h3>
-		Customer Id: ${customer.id} <br />
-		Customer First Name: ${customer.firstName} <br />
-		Customer Last Name: ${customer.lastName} <br />
-
-		<script type="text/javascript">
-
-			document.write(document.getElementById("moveable2").offsetLeft);
-		</script>
 	</body>
 </html>

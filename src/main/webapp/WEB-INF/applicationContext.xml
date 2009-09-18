@@ -26,7 +26,8 @@
 		<property name="id" value="1" />
 		<property name="firstName" value="John" />
 		<property name="lastName" value="Doe" />
-		<property name="position" value="800" />
+		<property name="leftPosition" value="800" />
+		<property name="topPosition" value="200" />
 	</bean>
 
 	<bean id="customerDAO" class="dao.CustomerDAOMock" >

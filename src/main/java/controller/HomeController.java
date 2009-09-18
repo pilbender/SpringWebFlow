@@ -42,6 +42,12 @@ public class HomeController extends AbstractController {
 		 * because these are made available and accessed from the application
 		 * context.
 		 */
+		if (request.getParameter("leftPosition") != null) {
+			customer.setLeftPosition(Integer.valueOf(request.getParameter("leftPosition")));
+		}
+		if (request.getParameter("topPosition") != null) {
+			customer.setTopPosition(Integer.valueOf(request.getParameter("topPosition")));
+		}
 		mav.addObject("customer", customer);
 		return mav;
 	}
