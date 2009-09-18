@@ -13,6 +13,7 @@ public class Customer implements Serializable {
 	private Integer id;
 	private String firstName;
 	private String lastName;
+	private Integer position;
 
 	/**
 	 * @return the firstName
@@ -54,6 +55,20 @@ public class Customer implements Serializable {
 	 */
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	/**
+	 * @return the position
+	 */
+	public Integer getPosition() {
+		return position;
+	}
+
+	/**
+	 * @param position the position to set
+	 */
+	public void setPosition(Integer position) {
+		this.position = position;
 	}
 
 }

@@ -34,7 +34,7 @@
 				background: #fff;
 				width:  200px;
 				height: 200px;
-				left: 100px;
+				left: ${customer.position}px;
 				top:  100px;
 				padding: 10px 20px;
 				margin: 10px 20px;
@@ -85,9 +85,9 @@
 
 		<table id="moveable1">
 			<tr><td id="handle1" colspan="2">You can drag the table using this handle.</td></tr>
-			<tr><td>1</td><td>Customer Id: ${customer.id}</td></tr>
-			<tr><td>2</td><td>First Name: ${customer.firstName}</td></tr>
-			<tr><td>3</td><td>Last Name: ${customer.lastName}</td></tr>
+			<tr><td>Customer Id:</td><td>${customer.id}</td></tr>
+			<tr><td>First Name:</td><td>${customer.firstName}</td></tr>
+			<tr><td>Last Name:</td><td>${customer.lastName}</td></tr>
 		</table>
 
 		<div id="moveable2">
@@ -105,5 +105,9 @@
 		Customer First Name: ${customer.firstName} <br />
 		Customer Last Name: ${customer.lastName} <br />
 
+		<script type="text/javascript">
+
+			document.write(document.getElementById("moveable2").offsetLeft);
+		</script>
 	</body>
 </html>
