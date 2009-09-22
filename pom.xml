@@ -5,7 +5,7 @@
 	<groupId>net.raescott</groupId>
 	<artifactId>SpringWebFlow</artifactId>
 	<packaging>war</packaging>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.4-SNAPSHOT</version>
 	<name>SpringWebFlow JEE5 Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>

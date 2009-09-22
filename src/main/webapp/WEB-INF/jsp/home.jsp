@@ -56,6 +56,8 @@
 			dojo.require("dojo.dnd.Mover");
 			dojo.require("dojo.dnd.Moveable");
 			dojo.require("dojo.dnd.move");
+
+			var x, y;
 			var m1, m2;
 			var initDND = function(){
 				m1 = new dojo.dnd.Moveable("moveable1", {handle: "handle1"});
@@ -67,6 +69,9 @@
 				});
 				dojo.subscribe("/dnd/move/stop", function(mover){
 					console.debug("Stop move", mover);
+					x = dojo.byId("moveable2").offsetLeft;
+					y = dojo.byId("moveable2").offsetTop;
+					dojo.byId("outputHere").innerHTML = "("+ x + "," + y + ")";
 				});
 
 				dojo.connect(m1, "onMoveStart", function(mover){
@@ -78,12 +83,6 @@
 			};
 			dojo.addOnLoad(initDND);
 
-			var x, y;
-			var position = function(x,y){
-				x = document.getElementById("moveable2").offsetLeft;
-				y = document.getElementById("moveable2").offsetTop;
-			};
-
 		</script>
 
 	</head>
@@ -94,6 +93,10 @@
 		Customer Id: ${customer.id} <br />
 		Customer First Name: ${customer.firstName} <br />
 		Customer Last Name: ${customer.lastName} <br />
+
+		<div id="outputHere">
+			New Coordinates Here
+		</div>
 
 		<form action="home.do" method="GET" enctype="multipart/form-data">
 			<input type="text" name="leftPosition" value="${customer.leftPosition}" />
