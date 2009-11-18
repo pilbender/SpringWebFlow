@@ -1,0 +1,19 @@
+/* 
+    Document   : attendance
+    Created on : Sep 24, 2009, 9:40:34 AM
+    Author     : Richard Scott Smith <rsmith@harriscomputer.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+desk {
+	position: absolute;
+	background: #aaa;
+	width:  20px;
+	height: 20px;
+	border: 2px solid black;
+	cursor: pointer;
+	radius:8pt;
+	-moz-border-radius:8pt 8pt;
+}
+

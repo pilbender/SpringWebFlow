@@ -15,7 +15,7 @@ public class HomeController extends AbstractController {
 
 	public HomeController() {
 		// We are only supporting http get right now.
-		setSupportedMethods(new String[]{METHOD_GET});
+		setSupportedMethods(new String[]{METHOD_GET, METHOD_POST});
 		// Tell Browsers to cache this for 5 minutes.
 		setCacheSeconds(300);
 	}

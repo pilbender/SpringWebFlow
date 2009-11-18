@@ -13,8 +13,9 @@
 
 		<!-- load the dojo toolkit base -->
 		<script type="text/javascript" src="resources/dojo/dojo.js"></script>
-		<script type="text/javascript" src="resources/dojo/dijit.js"></script>
-		<script type="text/javascript" src="resources/dojo/dojox.js"></script>
+		<script type="text/javascript" src="resources/dijit/dijit.js"></script>
+		<script type="text/javascript" src="resources/dojox/dojox.js"></script>
+		<script type="text/javascript" src="resources/js/draggable.js"></script>
 
 		<style type="text/css">
 			#desk {
@@ -31,27 +32,8 @@
 			}
 		</style>
 		<script type="text/javascript">
-			dojo.require("dojo.dnd.Mover");
-			dojo.require("dojo.dnd.Moveable");
-			dojo.require("dojo.dnd.move");
-
-			var x, y;
-			var desk;
-			var initDND = function(){
-				desk = new dojo.dnd.Moveable("desk");
-
-				dojo.subscribe("/dnd/move/start", function(mover){
-					console.debug("Start move", mover);
-				});
-				dojo.subscribe("/dnd/move/stop", function(mover){
-					console.debug("Stop move", mover);
-					x = dojo.byId("desk").offsetLeft;
-					y = dojo.byId("desk").offsetTop;
-					dojo.byId("outputHere").innerHTML = "("+ x + "," + y + ")";
-				});
-			};
-			dojo.addOnLoad(initDND);
-
+			dojo.provide("js.draggable");
+			dojo.byId("outputHere").innerHTML = drag("#desk");
 		</script>
 
 	</head>
