@@ -41,10 +41,6 @@
 		<h1>Classroom</h1>
 
 		<h3>Quick Dynamic Output</h3>
-		Customer Id: ${customer.id} <br />
-		Customer First Name: ${customer.firstName} <br />
-		Customer Last Name: ${customer.lastName} <br />
-
 		<div id="outputHere">
 			New Coordinates Here
 		</div>
@@ -55,6 +51,8 @@
 			<input type="submit" value="Save" />
 		</form>
 
-		<div id="desk"></div>
+		<div id="desk">
+			<div id="outputHere" />
+		</div>
 	</body>
 </html>

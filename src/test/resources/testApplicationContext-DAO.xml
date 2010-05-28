@@ -22,13 +22,13 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
     
-	<bean id="customer" class="javabeans.Customer" >
+	<bean id="customer" class="net.raescott.javabeans.Customer" >
 		<property name="id" value="1" />
 		<property name="firstName" value="John" />
 		<property name="lastName" value="Doe" />
 	</bean>
 
-	<bean id="customerDAO" class="dao.CustomerDAOMock" >
+	<bean id="customerDAO" class="net.raescott.dao.CustomerDAOMock" >
 		<property name="customer" ref="customer" />
 	</bean>
 </beans>
