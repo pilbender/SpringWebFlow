@@ -1,11 +1,11 @@
-package javabeans;
+package net.raescott.javabeans;
 
 /**
  * Simple container class to hold the room positions on the screen for the
  * classroom attendance module.
  * @author Richard Scott Smith <rsmith@harriscomputer.com>
  */
-public class locator {
+public class Locatation {
 	private int x;
 	private int y;
 

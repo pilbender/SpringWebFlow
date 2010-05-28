@@ -1,4 +1,4 @@
-package javabeans;
+package net.raescott.javabeans;
 
 import java.io.Serializable;
 import javax.persistence.Id;

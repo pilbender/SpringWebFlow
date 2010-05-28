@@ -1,6 +1,6 @@
-package dao;
+package net.raescott.dao;
 
-import javabeans.Customer;
+import net.raescott.javabeans.Customer;
 import javax.persistence.Entity;
 
 /**

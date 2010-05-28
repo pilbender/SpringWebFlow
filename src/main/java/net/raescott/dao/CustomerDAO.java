@@ -1,6 +1,6 @@
-package dao;
+package net.raescott.dao;
 
-import javabeans.Customer;
+import net.raescott.javabeans.Customer;
 
 /**
  * Data Access Object for <code>Customer</code>.

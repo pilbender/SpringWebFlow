@@ -1,8 +1,8 @@
-package dao;
+package net.raescott.dao;
 
-import dao.*;
-import exception.GeneralException;
-import javabeans.Customer;
+import net.raescott.dao.*;
+import net.raescott.exception.GeneralException;
+import net.raescott.javabeans.Customer;
 
 /**
  * Mock Object to test the Customer Interface.

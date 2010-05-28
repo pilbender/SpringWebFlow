@@ -1,6 +1,6 @@
-package controller;
+package net.raescott.controller;
 
-import javabeans.Customer;
+import net.raescott.javabeans.Customer;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;

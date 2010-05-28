@@ -1,4 +1,4 @@
-package exception;
+package net.raescott.exception;
 
 /**
  *

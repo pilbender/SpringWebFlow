@@ -1,7 +1,9 @@
-package dao;
+package net.raescott.dao;
 
-import exception.GeneralException;
-import javabeans.Customer;
+import net.raescott.dao.CustomerDAO;
+import net.raescott.dao.CustomerDAOImpl;
+import net.raescott.exception.GeneralException;
+import net.raescott.javabeans.Customer;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

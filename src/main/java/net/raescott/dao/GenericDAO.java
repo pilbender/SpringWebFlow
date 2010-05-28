@@ -1,6 +1,6 @@
-package dao;
+package net.raescott.dao;
 
-import exception.GeneralException;
+import net.raescott.exception.GeneralException;
 import java.io.Serializable;
 
 /**

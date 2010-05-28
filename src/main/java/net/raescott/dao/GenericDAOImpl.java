@@ -1,4 +1,4 @@
-package dao;
+package net.raescott.dao;
 
 import java.io.Serializable;
 
@@ -7,8 +7,7 @@ import javax.persistence.EntityManagerFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import dao.GenericDAO;
-import exception.GeneralException;
+import net.raescott.exception.GeneralException;
 
 /**
  * Provides a generic, type-safe implementation of the basic CRUD operations
